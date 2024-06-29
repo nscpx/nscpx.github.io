@@ -1,0 +1,89 @@
+﻿<html lang="en">
+
+<head>
+    <meta charset="UTF-8"  />
+    <title>表格</title>
+</head>
+
+<body>
+    <h6>hallo world</h6>
+    <!--表格使用-->
+    <table align="center" border="1" cellpadding="5" cellspacing="0">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>91</td>
+            </tr>
+        </tbody>
+
+    </table><br />
+    <!--表格合并-->
+    <table border="1" cellpadding="5" cellspacing="0" align="center">
+        <tr>
+            <td>1</td>
+            <td colspan="2">2&nbsp&nbsp&nbsp3</td>
+        </tr>
+        <tr>
+            <td rowspan="2">4<br /><br />7</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+
+    </table><br />
+    <!--无序列表-->
+    <ul >
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul><br />
+    <!--自定义列表-->
+    <dl>
+        <dt>a</dt>
+        <dd>b</dd>
+        <dd>c</dd>
+    </dl><br />
+    <!--表单(不需要提交)-->
+    <form> <!--action="" method="POST" name="name1" -->
+        用户名:<input type="text" value="请输入邮箱地址"><br />
+        密码:<input type="password" value=""><br />
+        爱好：<input type="checkbox" value="eat">吃饭<input type="checkbox" value="sleep">睡觉<input type="checkbox" value="paly">打豆豆<br />
+        性别：男<input type="radio" value="man">女<input type="radio" value="woman">非二元性别<input type="radio" value="xingqiu"><br />
+        <input type="checkbox" checked>我同意<a href="https://privacy.qq.com/ ">隐私条款</a>:<br />
+        <input type="submit" value="才不提交">
+        <input type="reset" value="点点试试？">
+        <input type="button" value="奇怪的按钮"><br>
+        <input type="checkbox" id="sex" name="114514" /><lable for="sex">点击文字也可以选定?</lable>
+    </form>
+    <!--下拉表单-->
+    <form>
+        选择数字：
+        <select>
+            <option>---请选择---</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option selected>a</option>
+        </select>
+    </form>
+    <!--文本域-->
+    <form>
+        bug反馈：
+        <textarea cols="50" rows="5"></textarea>
+    </form>
+</body>
+
+</html>
